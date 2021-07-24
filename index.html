@@ -7,8 +7,18 @@
     <title>
         Is your birthday lucky?
     </title>
+    <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-    
+    <h1>Enter Your Birthdate and Lucky Number to continue....</h1>
+    <form>
+        <label for="birth_date">Select Your Birth Date</label>
+        <input type="date" id="birth_date" min="1950-01-01" max="2021-12-31" />
+        <label for="lucky_number">Enter Your Lucky Number</label>
+        <input type="text" id="lucky_number" />
+        <button type="submit" id="submit_btn">Check</button>
+    </form>
+
+    <script src="script.js"></script>
 </body>
 </html>
