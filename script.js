@@ -8,9 +8,9 @@ let displayOutput = document.getElementById("output");
 
 let happyImage = document.querySelector(".output_happy_image");
 
-// let happyImage = document.querySelector("#happy_image");
-
 let sadImage = document.querySelector(".output_sad_image");
+
+let close = document.querySelector(".close"); 
 
 
 function birthDateHandler(event){
@@ -43,5 +43,12 @@ function birthDateHandler(event){
         displayOutput.innerHTML += "You are not a lucky person" + "<br />" + "<img src = \"./images/undraw_feeling_blue_4b7q (1).svg\" width = \"45%\" height =\"25%\">";
     }
 }
+
+
+close.addEventListener('click', function(){
+    this.parentElement.style.display = 'none';
+    this.parentElement.style.border = "1px solid #a8ff78";
+});
+
 
 submitButton.addEventListener('click', birthDateHandler);
