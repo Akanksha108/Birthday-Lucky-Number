@@ -4,6 +4,13 @@
 
 body{
     text-align: center;
+    background-image: linear-gradient(#F0C27B,#4B1248);
+}
+
+.heading{
+    padding: 15px 40px;
+    margin: 20px;
+    text-align: center;
 }
 
 .details_form{
@@ -33,6 +40,8 @@ input{
 
 .footer{
     width: 100%;
+    margin: 20px 0;
+    border: 1px solid black;
 }
 
 .footer_list{
