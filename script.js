@@ -40,7 +40,7 @@ function birthDateHandler(event){
         displayOutput.innerHTML += "Hurray, you are a lucky person🥳🥳🎉"+ "<br />" + "<img src = \"./images/undraw_Partying_re_at7f.svg\" width = \"60%\" height =\"40%\">";
     }
     else{
-        displayOutput.innerHTML += "You are not a lucky person" + "<br />" + "<img src = \"./images/undraw_feeling_blue_4b7q (1).svg\" width = \"60%\" height =\"40%\">";
+        displayOutput.innerHTML += "You are not a lucky person" + "<br />" + "<img src = \"./images/undraw_feeling_blue_4b7q (1).svg\" width = \"45%\" height =\"25%\">";
     }
 }
 
