@@ -47,7 +47,6 @@ function birthDateHandler(event){
 
 close.addEventListener('click', function(){
     this.parentElement.style.display = 'none';
-    this.parentElement.style.border = "1px solid #a8ff78";
 });
 
 
