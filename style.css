@@ -17,13 +17,20 @@ body{
 }
 
 .privacy_note{
-    border: 2px solid red;
+    border: 1px solid red;
     color: red;
     width: 100%;
     margin: auto;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    margin-top: 10px;
     margin-bottom: 10px;
+    position: relative;
+}
+
+.close{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .heading{
