@@ -4,7 +4,17 @@
 
 body{
     text-align: center;
-    background-image: linear-gradient(#F0C27B,#4B1248);
+    background-image: linear-gradient(#a8ff78,#78ffd6);
+}
+
+.privacy_note{
+    border: 2px solid red;
+    color: red;
+    width: 100%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .heading{
@@ -42,6 +52,7 @@ input{
     width: 100%;
     margin: 20px 0;
     border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .footer_list{
@@ -58,4 +69,10 @@ input{
 .footer_img{
     width: 40px;
     margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .privacy_note{
+        width: 40%;
+    }
 }
