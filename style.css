@@ -67,12 +67,18 @@ input{
 }
 
 .footer_img{
-    width: 40px;
+    width: 30px;
     margin: auto;
 }
 
 @media screen and (min-width: 768px) {
     .privacy_note{
         width: 40%;
+    }
+
+    .footer{
+        width: 50%;
+        margin: auto;
+        margin-top: 20px;
     }
 }
