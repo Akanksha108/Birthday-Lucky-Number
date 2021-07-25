@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+}
+
+.details_form{
+    display: block;
+    width: 100%;
+}
+
+.details_date{
+    display: block;
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input{
+    width: 50%;
+    height: 6vh;
+    margin: 10px;
+}
+
+#submit_btn{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.footer{
+    width: 100%;
+}
+
+.footer_list{
+    list-style-type: none;
+    text-align: center;
+}
+
+.footer_list li{
+    display: inline;
+    margin: auto;
+    padding: 15px;
+}
+
+.footer_img{
+    width: 40px;
+    margin: auto;
+}
