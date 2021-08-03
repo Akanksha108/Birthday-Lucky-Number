@@ -4,7 +4,37 @@
 
 body{
     text-align: center;
+}
+
+
+#background_img{
+    background-image: url("./images/undraw_happy_birthday_s72n.svg");
+    width: 100%;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page_title{
+    border: 1.5px solid black;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     background-image: linear-gradient(#a8ff78,#78ffd6);
+    width: 50%;
+    display: block;
+    margin: auto;
+    height: 20vh;
+}
+
+#main{
+    width: 50%;
+    display: block;
+    margin: auto;
+    background-image: linear-gradient(#a8ff78,#78ffd6);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 #birthday_image{
@@ -87,6 +117,7 @@ input{
 .footer_list{
     list-style-type: none;
     text-align: center;
+    padding: 0;
 }
 
 .footer_list li{
@@ -98,6 +129,17 @@ input{
 .footer_img{
     width: 30px;
     margin: auto;
+}
+
+@media screen and (max-width: 360px) {
+    #main{
+        width: 350px;
+    }
+
+    .page_title{
+        width: 100%;
+    }
+
 }
 
 @media screen and (min-width: 768px) {

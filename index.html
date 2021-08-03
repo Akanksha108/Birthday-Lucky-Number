@@ -10,35 +10,47 @@
     <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="privacy_note">
-        <p><strong>Privacy Note!!!</strong>We are not storing your data.<span class="close">x</span></p>
-    </div>
-
-    <h1 class="heading">Enter Your Birthdate and Lucky Number to continue....</h1>
-
-    <img src="/images/undraw_happy_birthday_s72n.svg" alt="birthday_image" id="birthday_image"> 
-
-        <form class="details_form">
-            <label for="birth_date" class="details_date">Select Your Birth Date</label>
-            <input type="date" id="birth_date" min="1950-01-01" max="2021-12-31" required />
-            <label for="lucky_number" class="details_date">Enter Your Lucky Number</label>
-            <input type="text" id="lucky_number" required />
-            <button type="submit" id="submit_btn">Check</button>
-        </form>
+    
+        <div id="background_img">
+            <div class="page_title"> 
+                <h1>
+                    Is Your Birthday lucky?
+                </h1>
+                <a href="#main">Scroll Down To Check</a>
+                </div>
+        </div>
+    
+    <!-- Main Section -->
+    <div id="main">
+        <div class="privacy_note">
+            <p><strong>Privacy Note!!!</strong>We are not storing your data.<span class="close">x</span></p>
+        </div>
+    
+        <h1 class="heading">Enter Your Birthdate and Lucky Number to continue....</h1>
+    
+    
+            <form class="details_form">
+                <label for="birth_date" class="details_date">Select Your Birth Date</label>
+                <input type="date" id="birth_date" min="1950-01-01" max="2021-12-31" required />
+                <label for="lucky_number" class="details_date">Enter Your Lucky Number</label>
+                <input type="text" id="lucky_number" required />
+                <button type="submit" id="submit_btn">Check</button>
+            </form>
+    
+        <div id="output"></div>
     
 
-    <div id="output"></div>
+        <footer class="footer">
+            <h2 class="footer_heading">Connect with me!!!</h2>
+            <ul class="footer_list">
+                <li><a href="https://github.com/Akanksha108"><img src="./images/github.png" class="footer_img" /></a></li>
 
-    <footer class="footer">
-        <h2 class="footer_heading">Connect with me!!!</h2>
-        <ul class="footer_list">
-            <li><a href="https://github.com/Akanksha108"><img src="./images/github.png" class="footer_img" /></a></li>
+                <li><a href="https://www.linkedin.com/in/akanksha-kawade-434473167"><img src="images/linkedIn.png" class="footer_img" /></a></li>
 
-            <li><a href="https://www.linkedin.com/in/akanksha-kawade-434473167"><img src="images/linkedIn.png" class="footer_img" /></a></li>
-
-            <li><a href="https://www.instagram.com/kawade_akanksha17/"><img src="images/insta.png" class="footer_img" /></a></li>
-        </ul>
-    </footer>
+                <li><a href="https://www.instagram.com/kawade_akanksha17/"><img src="images/insta.png" class="footer_img" /></a></li>
+            </ul>
+        </footer>
+</div>
 
     <script src="script.js"></script>
 </body>
