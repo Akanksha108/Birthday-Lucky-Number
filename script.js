@@ -6,10 +6,6 @@ let submitButton = document.getElementById("submit_btn");
 
 let displayOutput = document.getElementById("output");
 
-let happyImage = document.querySelector(".output_happy_image");
-
-let sadImage = document.querySelector(".output_sad_image");
-
 let close = document.querySelector(".close"); 
 
 
@@ -20,8 +16,6 @@ function birthDateHandler(event){
 
     let luckyNumberInput = luckyNumber.value;
 
-    // let happyImageSrc = happyImage.value;
-
     let sum = 0;
 
     for(let i = 0; i < birthDateInput.length; i++){
@@ -31,7 +25,6 @@ function birthDateHandler(event){
         if(!isNaN(num)){
             sum += num;
         }
-        console.log(sum);
     }
     
     if(sum % luckyNumberInput == 0){
