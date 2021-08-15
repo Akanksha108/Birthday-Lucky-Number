@@ -163,3 +163,41 @@ input{
         margin-top: 20px;
     }
 }
+
+@media screen and (min-width: 1400px) {
+    .page_title h1{
+        font-size: 40px;
+    }
+
+    .page_title a{
+        font-size: 30px;
+    }
+
+    .privacy_note p{
+        font-size: 23px;
+    }
+
+    .details_date{
+        font-size: 30px;
+    }
+
+    input{
+        font-size: 22px;
+    }
+
+    .heading{
+        font-size: 40px;
+    }
+
+    #submit_btn{
+        font-size: 20px;
+    }
+
+    #output{
+        font-size: 32px;
+    }
+
+    .footer{
+        font-size: large;
+    }
+}
