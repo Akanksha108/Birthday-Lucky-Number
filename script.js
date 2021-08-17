@@ -18,22 +18,27 @@ function birthDateHandler(event){
 
     let sum = 0;
 
-    for(let i = 0; i < birthDateInput.length; i++){
+    if(birthDateInput && luckyNumberInput){
+        for(let i = 0; i < birthDateInput.length; i++){
 
-        const num = parseInt(birthDateInput.charAt(i));
-
-        if(!isNaN(num)){
-            sum += num;
+            const num = parseInt(birthDateInput.charAt(i));
+    
+            if(!isNaN(num)){
+                sum += num;
+            }
+        }
+        
+        if(sum % luckyNumberInput == 0){
+            // console.log("Hurray, you are a lucky person!!!");
+    
+            displayOutput.innerHTML += "Hurray, you are a lucky person🥳🥳🎉"+ "<br />" + "<img src = \"./images/undraw_Partying_re_at7f.svg\" width = \"60%\" height =\"40%\">";
+        }
+        else{
+            displayOutput.innerHTML += "You are not a lucky person" + "<br />" + "<img src = \"./images/undraw_feeling_blue_4b7q (1).svg\" width = \"45%\" height =\"25%\">";
         }
     }
-    
-    if(sum % luckyNumberInput == 0){
-        // console.log("Hurray, you are a lucky person!!!");
-
-        displayOutput.innerHTML += "Hurray, you are a lucky person🥳🥳🎉"+ "<br />" + "<img src = \"./images/undraw_Partying_re_at7f.svg\" width = \"60%\" height =\"40%\">";
-    }
     else{
-        displayOutput.innerHTML += "You are not a lucky person" + "<br />" + "<img src = \"./images/undraw_feeling_blue_4b7q (1).svg\" width = \"45%\" height =\"25%\">";
+        displayOutput.innerHTML = "Please enter valid input";
     }
 }
 
